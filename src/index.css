@@ -13,7 +13,7 @@
         @apply font-bold py-2 px-4 rounded bg-red-600;
     }
     .section {
-        @apply h-screen p-12
+        @apply h-screen pt-12;
     }
 }
 
