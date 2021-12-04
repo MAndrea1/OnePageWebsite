@@ -6,9 +6,9 @@ const Navbar = ({HandleClick}) => {
             <a href='#home' className='text-yellow-600 font-serif text-4xl'>LOGO</a>
             <button onClick={() => {HandleClick()}} className='text-yellow-500 sm:hidden inline-block mr-3'>Menu</button>
             <ul className='hidden sm:inline-flex'>
-                {MenuSections.map((section) => {
+                {MenuSections.map((section, key) => {
                     return(
-                        <li className={'text-yellow-500 hover:text-white cursor-pointer block m-5'}>
+                        <li key={key} className={'text-yellow-500 hover:text-white cursor-pointer block m-5'}>
                             <a href={section.link}>{section.name}</a>
                         </li>
                     )
