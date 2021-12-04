@@ -1,8 +1,8 @@
 {
   "name": "playground-with-tailwind",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://{username}.github.io",
   "dependencies": {
     "@craco/craco": "^6.4.0",
     "@heroicons/react": "^1.0.5",
@@ -17,15 +17,16 @@
     "react-hook-form": "^7.20.5",
     "react-scripts": "4.0.3",
     "save-dev": "0.0.1-security",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -48,7 +49,6 @@
   "devDependencies": {
     "autoprefixer": "^9.8.8",
     "postcss": "^7.0.39",
-    "stylelint-config-recommended": "^6.0.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+    "stylelint-config-recommended": "^6.0.0"
   }
 }

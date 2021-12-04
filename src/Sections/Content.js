@@ -26,7 +26,7 @@ console.log(images)
     return (
         <section className='section pb-32 bg-gradient-to-t from-yellow-900 to-yellow-800 text-center' id='content'>
         <h1 className='text-4xl mb-16 mt-5 sm:mt-10 text-gray-50'>Other content</h1>
-        <div className='mx-32 grid grid-cols-3 gap-4 justify-items-center'>
+        <div className='mx-20 grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2 gap-4 justify-items-center'>
             {images.map((image) => {
                 return(
                     <div key={image.id} className={'h-40 w-60 overflow-hidden'}>
